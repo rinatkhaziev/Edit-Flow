@@ -103,6 +103,18 @@ New features, including story budget and editorial metadata, a completely rewrit
 
 == Changelog ==
 
+= 0.8.3 (Apr 20, 2018) =
+* UI Improvement: Made primary buttons on Settings screen consistent with WordPress UI. Props [cojennin](https://github.com/cojennin)
+* Improvement: Updated Russian translation and documentation. Props [achumakov](https://github.com/achumakov)
+* Improvement: Eliminate a few cases of raw SQL queries in favor of `date_query`. Props [justnorris](https://github.com/justnorris)
+* Improvement: Cache calendar items for each user individually to prevent potential cache pollution. Props [justnorris](https://github.com/justnorris)
+* Improvement: various i18n updates
+* WordPress Coding Standards improvements and code cleanup by many unsung heroes (primarily [justnorris](https://github.com/justnorris))
+* Bug fix: Fix ef_pre_insert_editorial_comment filter so that it actually has meaning. Props [sudar](https://github.com/sudar)
+* Bug fix: Fix PHP Warning: array_map(): Argument #2 should be an array. Props Michael Auteri.
+* Bug fix: Always offset post times to UTC+0 for Calendars to prevent incorrect times when adding to iCalendar/Google Calendar. Props [justnorris](https://github.com/justnorris)
+* Bug fix: Use taxonomy when checking for term existence when trying to prevent term collision. Props [shadyvb](https://github.com/shadyvb)
+
 = 0.8.2 (Sept 16, 2016) =
 * Improvement: Updated Spanish localization thanks to [moucho](https://github.com/moucho)
 * Improvement: New Swedish localization thanks to [Warpsmith](https://github.com/Warpsmith)
