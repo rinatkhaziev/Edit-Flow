@@ -109,7 +109,11 @@ New features, including story budget and editorial metadata, a completely rewrit
 * Improvement: Eliminate a few cases of raw SQL queries in favor of `date_query`. Props [justnorris](https://github.com/justnorris)
 * Improvement: Cache calendar items for each user individually to prevent potential cache pollution. Props [justnorris](https://github.com/justnorris)
 * Improvement: various i18n updates
+* Improvement: Move ef_story_budget_posts_query_args filter down to allow overriding the date query in Story Budget module.
+* Improvement: Limit results in Calendar to 200 per, potentially saving from trouble on websites with large amount of content.
+* Improvement: Don’t generate rewrite rules for notepad as they're unused.
 * WordPress Coding Standards improvements and code cleanup by many unsung heroes (primarily [justnorris](https://github.com/justnorris))
+* Bug fix: Prevent user from removing "Draft" post status, breaking the auto-draft functionality
 * Bug fix: Fix ef_pre_insert_editorial_comment filter so that it actually has meaning. Props [sudar](https://github.com/sudar)
 * Bug fix: Fix PHP Warning: array_map(): Argument #2 should be an array. Props Michael Auteri.
 * Bug fix: Always offset post times to UTC+0 for Calendars to prevent incorrect times when adding to iCalendar/Google Calendar. Props [justnorris](https://github.com/justnorris)
